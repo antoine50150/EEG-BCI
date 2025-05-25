@@ -1,0 +1,5 @@
+{
+  "python.defaultInterpreterPath": "C:\\Users\\Antoi\\miniconda3\\envs\\eeg-bci-env\\python.exe",
+  "python.condaPath": "C:\\Users\\Antoi\\miniconda3\\Scripts\\conda.exe",
+  "python.terminal.activateEnvironment": true
+}

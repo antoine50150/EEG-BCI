@@ -1,0 +1,15 @@
+name: eeg-bci-env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - mne
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - jupyterlab
+  - ipywidgets
+  - pip
+  - pip:
+      - scikit-learn
