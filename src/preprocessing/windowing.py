@@ -75,7 +75,7 @@ with torch.no_grad():
         preds = model(xb)
         y_true.extend(yb.numpy())
         y_pred.extend(preds.argmax(1).numpy())
-
+#
 # Matrice de confusion
 cm = confusion_matrix(y_true, y_pred)
 ConfusionMatrixDisplay(cm).plot()
