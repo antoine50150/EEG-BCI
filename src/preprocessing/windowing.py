@@ -16,7 +16,7 @@ def extract_epochs_from_annotations(raw, tmin=0.0, tmax=4.0, output_path=None):
     print("✅ Extraction des événements depuis les annotations...")
     descriptions = list(set(annot["description"] for annot in raw.annotations))
     descriptions.sort()
-    event_id = {desc: idx for idx, desc in enumerate(descriptions)}
+    event_id = {desc: i for i, desc in enumerate(descriptions) if desc in ("T0", "T1", "T2")}
 
     events, _ = mne.events_from_annotations(raw, event_id=event_id, verbose=False)
     print(f"✅ {len(events)} événements détectés : {event_id}")

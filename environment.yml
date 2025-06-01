@@ -15,6 +15,7 @@ dependencies:
   - ipykernel
   - ipywidgets
   - pip
+  - imbalanced-learn
   - pip:
       - torch
       - torchvision
