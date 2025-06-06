@@ -82,9 +82,9 @@ Next steps:
 - matplotlib
 - seaborn
 
-Install all requirements:
+Install all requirements with Conda:
 ```bash
-pip install -r requirements.txt
+conda env create -f environment.yml
 ```
 
 ---
